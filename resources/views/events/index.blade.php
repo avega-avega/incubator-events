@@ -1,6 +1,6 @@
 @foreach ($events as $event)
 
-    <a href="{{route('event.show', $event->id)}}">{{$event->name}}</a>
+    <a href="{{route('event.show', $event->id)}}">{{$event->title}}</a>
     <p>{{strip_tags($event->description)}}</p>
     <p>{{$event->content}}</p>
     <p>{{$event->created_at}}</p>

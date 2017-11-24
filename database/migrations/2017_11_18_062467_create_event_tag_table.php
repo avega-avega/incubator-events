@@ -16,7 +16,6 @@ class CreateEventTagTable extends Migration
         Schema::create('event_tag', function (Blueprint $table) {
             $table->integer('tag_id')->unsigned();
             $table->integer('event_id')->unsigned();
-
             $table->primary(['tag_id', 'event_id']);
 
             $table->foreign('event_id')->references('id')->on('events');

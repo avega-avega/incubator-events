@@ -1,5 +1,5 @@
     <a href="{{route('home')}}">Список событий</a>
-    <p>{{$event->name}}</p>
+    <p>{{$event->title}}</p>
     <p>{{$event->content}}</p>
     <p>{{$event->created_at}}</p>
 
