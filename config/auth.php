@@ -67,7 +67,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => incubator\User::class,
+            'model' => Incubator\User::class,
         ],
 
         // 'users' => [

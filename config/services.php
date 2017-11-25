@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model' => incubator\User::class,
+        'model' => Incubator\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

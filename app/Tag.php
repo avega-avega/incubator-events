@@ -1,6 +1,6 @@
 <?php
 
-namespace incubator;
+namespace Incubator;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -10,6 +10,6 @@ class Tag extends Model
 
     public function events()
     {
-        return $this->belongsToMany('incubator\Event', 'event_tag', 'tag_id', 'event_id');
+        return $this->belongsToMany('Incubator\Event', 'event_tag', 'tag_id', 'event_id');
     }
 }

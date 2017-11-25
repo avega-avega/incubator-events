@@ -1,10 +1,10 @@
 <?php
 
-namespace incubator\Http\Controllers;
+namespace Incubator\Http\Controllers;
 
 use Illuminate\Http\Request;
-use incubator\{Event, Tag};
-use incubator\Repositories\EventRepository;
+use Incubator\{Event, Tag};
+use Incubator\Repositories\EventRepository;
 
 class EventsController extends Controller
 {

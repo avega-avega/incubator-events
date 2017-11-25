@@ -1,8 +1,8 @@
 <?php
 
-namespace incubator\Repositories;
+namespace Incubator\Repositories;
 
-use incubator\{Event, Tag};
+use Incubator\{Event, Tag};
 
 class EventRepository
 {

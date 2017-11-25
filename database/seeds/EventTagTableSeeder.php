@@ -11,8 +11,8 @@ class EventTagTableSeeder extends Seeder
      */
     public function run()
     {
-        $tags = incubator\Tag::get();
-        incubator\Event::get()->each(function ($event) use ($tags) {
+        $tags = Incubator\Tag::get();
+        Incubator\Event::get()->each(function ($event) use ($tags) {
             $event->tags()->attach(
                 $tags->random(rand(1, 3))->pluck('id')->toArray()
             );
